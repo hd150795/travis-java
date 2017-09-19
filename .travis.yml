@@ -9,7 +9,5 @@ deploy:
     branch: master
   skip_cleanup: true
 before_install:
-- openssl aes-256-cbc -K $encrypted_f30b69dfa6bb_key -iv $encrypted_f30b69dfa6bb_iv
-  -in encrypts.tar.gz.enc -out encrypts.tar.gz -d
 - tar -xzvf encrypts.tar.gz
 - chmod 400 encrypts/key.pem
